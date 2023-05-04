@@ -1,11 +1,11 @@
 import Layout from '@/components/Layout'
 
-const Home = () => {
+const ErrorPage = () => {
   return (
     <Layout>
-      <p>Main page</p>
+      <p>404 page</p>
     </Layout>
   )
 }
 
-export default Home
+export default ErrorPage
