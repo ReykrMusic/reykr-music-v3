@@ -1,6 +1,13 @@
 import Layout from '@/components/Layout'
 import { scrollToElement } from '../../utils'
 import Image from 'next/image'
+import {
+  FaBandcamp,
+  FaFacebook,
+  FaInstagram,
+  FaSoundcloud,
+  FaSpotify,
+} from 'react-icons/fa'
 
 const Home = () => {
   return (
@@ -25,6 +32,63 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <ul className="text-white mx-auto max-w-max flex gap-8 mt-6 text-4xl">
+          <li>
+            <a
+              href="https://www.instagram.com/reykr.official/"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:contrast-50 focus:contrast-50 transition"
+            >
+              <FaInstagram />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/reykr.music"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:contrast-50 focus:contrast-50 transition"
+            >
+              <FaFacebook />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/artist/4i5oaaegWPdDi8p3Dm23rJ"
+              aria-label="Spotify"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:contrast-50 focus:contrast-50 transition"
+            >
+              <FaSpotify />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://soundcloud.com/reykr"
+              aria-label="SoundCloud"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:contrast-50 focus:contrast-50 transition"
+            >
+              <FaSoundcloud />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://reykr.bandcamp.com/"
+              aria-label="Bandcamp"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:contrast-50 focus:contrast-50 transition"
+            >
+              <FaBandcamp />
+            </a>
+          </li>
+        </ul>
         <div className="Glass mx-auto mt-96">
           <div
             id="about"
