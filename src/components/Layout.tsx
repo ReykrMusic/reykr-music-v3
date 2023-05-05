@@ -19,7 +19,7 @@ const Layout = (props: ILayoutProps) => {
         pageImage={pageImage}
       />
       <header></header>
-      <main>{children}</main>
+      <main className="px-4">{children}</main>
       <footer>
         <p className="text-center text-white">
           Built by{' '}
