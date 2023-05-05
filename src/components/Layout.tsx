@@ -21,12 +21,13 @@ const Layout = (props: ILayoutProps) => {
       <header></header>
       <main>{children}</main>
       <footer>
-        <p>
+        <p className="text-center">
           Built by{' '}
           <a
             href="https://lucassilbernagel.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="underline underline-offset-4 hover:underline-offset-2 focus:underline-offset-2 ease-in-out transition-all duration-300"
           >
             Lucas Silbernagel
           </a>
