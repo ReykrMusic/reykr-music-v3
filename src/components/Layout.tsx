@@ -21,7 +21,7 @@ const Layout = (props: ILayoutProps) => {
       <header></header>
       <main>{children}</main>
       <footer>
-        <p className="text-center">
+        <p className="text-center text-white">
           Built by{' '}
           <a
             href="https://lucassilbernagel.com/"
