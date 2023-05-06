@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
-import { Roboto_Mono } from 'next/font/google'
 import Link from 'next/link'
 import { FaArrowLeft } from 'react-icons/fa'
+import { Roboto_Mono } from 'next/font/google'
 const roboto_mono = Roboto_Mono({ subsets: ['latin'] })
 
 const ErrorPage = () => {
