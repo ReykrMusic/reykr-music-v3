@@ -55,7 +55,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <ul className="text-white mx-auto max-w-max flex gap-6 sm:gap-8 mt-6 text-4xl">
+          <ul className="text-white mx-auto max-w-max flex gap-6 sm:gap-8 mt-6 text-4xl relative">
             <li>
               <a
                 href="https://www.instagram.com/reykr.official/"

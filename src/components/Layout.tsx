@@ -1,5 +1,7 @@
 import { ReactNode } from 'react'
 import Seo from './Seo'
+import SmokeElement from 'smoke-effect-react'
+import { motion } from 'framer-motion'
 
 interface ILayoutProps {
   pageTitle?: string
@@ -12,15 +14,28 @@ const Layout = (props: ILayoutProps) => {
   const { pageTitle, pageDescription, pageImage, children } = props
 
   return (
-    <>
+    <div className="relative">
       <Seo
         pageTitle={pageTitle}
         pageDescription={pageDescription}
         pageImage={pageImage}
       />
+      <motion.div
+        className="fixed top-0"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.8 }}
+      >
+        <SmokeElement
+          opacity="0"
+          src="/smoke-background.png"
+          smokeSrc="/smoke-element.png"
+          smokeOpacity="0.7"
+        />
+      </motion.div>
       <header></header>
       <main className="px-4">{children}</main>
-      <footer className="pb-4">
+      <footer className="pb-4 relative">
         <p className="text-center text-white">
           Built by{' '}
           <a
@@ -33,7 +48,7 @@ const Layout = (props: ILayoutProps) => {
           </a>
         </p>
       </footer>
-    </>
+    </div>
   )
 }
 
