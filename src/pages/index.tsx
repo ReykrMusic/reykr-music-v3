@@ -12,7 +12,7 @@ import { Spotify } from 'react-spotify-embed'
 import content from '../../public/content'
 
 const Home = () => {
-  const { spotifySongs } = content
+  const { profilePhoto, bio, spotifySongs } = content
   return (
     <Layout>
       <div>
@@ -99,7 +99,7 @@ const Home = () => {
           >
             <div className="min-w-[260px] md:min-w-[300px]">
               <Image
-                src="/profilePhoto.jpg"
+                src={`/${profilePhoto}`}
                 alt="Reykr"
                 width={0}
                 height={0}
@@ -108,12 +108,7 @@ const Home = () => {
               />
             </div>
             <div className="p-4">
-              <p className="text-lg">
-                Reykr is an electronic music producer and DJ from British
-                Columbia, Canada. His songs combine influences from electronic,
-                hip-hop, and psychedelic music into introspective pieces with
-                shimmering melodies, punchy drums, and deep-driving bass.
-              </p>
+              <p className="text-lg">{bio}</p>
             </div>
           </div>
         </div>

@@ -1,7 +1,5 @@
 import Head from 'next/head'
-
-const defaultImage = '/vercel.svg'
-const defaultDescription = `Reykr is an electronic music producer and DJ from British Columbia, Canada. His songs combine influences from electronic, hip-hop, and psychedelic music into introspective pieces with shimmering melodies, punchy drums, and deep-driving bass.`
+import content from '../../public/content'
 
 interface ISeoProps {
   pageTitle?: string
@@ -10,13 +8,14 @@ interface ISeoProps {
 }
 
 const Seo = (props: ISeoProps) => {
+  const { seo } = content
   const {
-    pageTitle = '',
-    pageDescription = defaultDescription,
-    pageImage = defaultImage,
+    pageTitle = seo.pageTitle,
+    pageDescription = seo.pageDescription,
+    pageImage = `/${seo.pageImage}`,
   } = props
 
-  const getPageTitle = () => (pageTitle ? `${pageTitle} | REYKR` : 'REYKR')
+  const getPageTitle = () => (pageTitle ? `REYKR | ${pageTitle}` : 'REYKR')
 
   return (
     <Head>
