@@ -2,6 +2,7 @@ import Layout from '@/components/Layout'
 import { scrollToElement } from '../../utils'
 import Image from 'next/image'
 import {
+  FaArrowUp,
   FaBandcamp,
   FaFacebook,
   FaInstagram,
@@ -11,9 +12,22 @@ import {
 import { Spotify } from 'react-spotify-embed'
 import content from '../../public/content'
 import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 const Home = () => {
   const { profilePhoto, bio, spotifySongs } = content
+
+  const [currentScrollPos, setCurrentScrollPos] = useState(0)
+
+  const handleScroll = () => {
+    setCurrentScrollPos(window.pageYOffset)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [handleScroll])
+
   return (
     <Layout>
       <div>
@@ -141,6 +155,27 @@ const Home = () => {
             ))}
           </ul>
         </motion.div>
+        <div
+          className={`text-white text-4xl fixed bottom-12 right-12 duration-300 hidden xl:flex ${
+            currentScrollPos > 200
+              ? 'visible opacity-100'
+              : 'invisible opacity-0'
+          }`}
+        >
+          <button
+            className="hover:contrast-50 focus:contrast-50 transition"
+            aria-label="scroll to the top of the page"
+            onClick={() =>
+              window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+              })
+            }
+          >
+            <FaArrowUp />
+          </button>
+        </div>
       </div>
     </Layout>
   )
