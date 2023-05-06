@@ -17,3 +17,7 @@ main {
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(5.1px);
 }
+
+.SpotifyGrid {
+  @apply max-w-max xl:max-w-[1000px] mx-auto gap-x-7 xl:gap-x-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+}

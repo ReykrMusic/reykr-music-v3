@@ -8,8 +8,11 @@ import {
   FaSoundcloud,
   FaSpotify,
 } from 'react-icons/fa'
+import { Spotify } from 'react-spotify-embed'
+import content from '../../public/content'
 
 const Home = () => {
+  const { spotifySongs } = content
   return (
     <Layout>
       <div>
@@ -89,10 +92,10 @@ const Home = () => {
             </a>
           </li>
         </ul>
-        <div className="Glass mx-auto mt-96">
+        <div className="Glass mx-auto my-[100vh]">
           <div
             id="about"
-            className="text-black bg-white opacity-80 flex flex-col md:flex-row items-center gap-2 md:w-[700px]"
+            className="text-black bg-white opacity-80 flex flex-col md:flex-row items-center gap-2 md:w-[700px] scroll-mt-12"
           >
             <div className="min-w-[260px] md:min-w-[300px]">
               <Image
@@ -114,8 +117,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div id="music" className="text-white my-96">
-          <p>Music</p>
+        <div id="music" className="text-white mb-44 scroll-mt-12">
+          <ul className="SpotifyGrid">
+            {spotifySongs.map((song) => (
+              <li key={song} className="flex justify-center">
+                <Spotify link={song} />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </Layout>
