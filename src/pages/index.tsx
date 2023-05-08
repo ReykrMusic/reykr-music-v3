@@ -18,7 +18,7 @@ import { Roboto_Mono } from 'next/font/google'
 const roboto_mono = Roboto_Mono({ subsets: ['latin'] })
 
 const Home = () => {
-  const { profilePhoto, bio, spotifySongs } = content
+  const { topLogo, textLogo, profilePhoto, bio, spotifySongs } = content
 
   const [currentScrollPos, setCurrentScrollPos] = useState<number>(0)
 
@@ -71,9 +71,29 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1.8 }}
             >
-              <div className="Glass mx-auto max-w-xl mt-44">
+              <div className="w-32 mx-auto mt-20">
+                <Image
+                  src={`/${topLogo}`}
+                  alt=""
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }}
+                />
+              </div>
+              <div className="Glass mx-auto max-w-xl">
                 <div className="p-6 sm:px-12 sm:pb-12 sm:pt-6 bg-white opacity-80">
-                  <h1 className="text-center text-7xl">REYKR</h1>
+                  <h1 className="sr-only">Reykr</h1>
+                  <div className="">
+                    <Image
+                      src={`/${textLogo}`}
+                      alt=""
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      style={{ width: '100%', height: 'auto' }}
+                    />
+                  </div>
                   <nav className="mx-auto max-w-sm flex justify-center gap-20 text-2xl mt-6">
                     <button
                       className="hover:scale-110 focus:scale-110 transition-all ease-in-out duration-300"
