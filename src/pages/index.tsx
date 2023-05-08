@@ -61,7 +61,7 @@ const Home = () => {
             opacity="0"
             src="/smoke-background.png"
             smokeSrc="/smoke-element.png"
-            smokeOpacity="0.7"
+            smokeOpacity="0.1"
           />
         </motion.div>
         <Layout>
