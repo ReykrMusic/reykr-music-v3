@@ -1,1 +1,1 @@
-declare module 'smoke-effect-react'
+declare module 'lucas-silbernagel-smoke-effect-react'

@@ -13,7 +13,7 @@ import { Spotify } from 'react-spotify-embed'
 import content from '../../public/content'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import SmokeElement from 'smoke-effect-react'
+import SmokeElement from 'lucas-silbernagel-smoke-effect-react'
 import { Roboto_Mono } from 'next/font/google'
 const roboto_mono = Roboto_Mono({ subsets: ['latin'] })
 
