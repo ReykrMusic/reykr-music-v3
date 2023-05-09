@@ -13,7 +13,7 @@ import {
 const Hero = () => {
   const { topLogo, textLogo } = content
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.8 }}
@@ -116,7 +116,7 @@ const Hero = () => {
           </a>
         </li>
       </ul>
-    </motion.div>
+    </motion.section>
   )
 }
 

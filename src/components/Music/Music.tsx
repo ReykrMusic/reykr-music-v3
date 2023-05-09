@@ -5,7 +5,7 @@ import { Spotify } from 'react-spotify-embed'
 const Music = () => {
   const { spotifySongs } = content
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: '-150px' }}
@@ -21,7 +21,7 @@ const Music = () => {
           </li>
         ))}
       </ul>
-    </motion.div>
+    </motion.section>
   )
 }
 

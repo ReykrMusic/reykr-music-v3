@@ -5,7 +5,7 @@ import content from '../../../public/content'
 const About = () => {
   const { profilePhoto, bio } = content
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: '-150px' }}
@@ -31,7 +31,7 @@ const About = () => {
           <p className="text-lg">{bio}</p>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   )
 }
 
