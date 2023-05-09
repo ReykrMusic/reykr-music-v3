@@ -73,6 +73,7 @@ const Home = () => {
             >
               <div className="w-32 mx-auto mt-20">
                 <Image
+                  priority
                   src={`/${topLogo}`}
                   alt=""
                   width={0}
@@ -86,6 +87,7 @@ const Home = () => {
                   <h1 className="sr-only">Reykr</h1>
                   <div className="">
                     <Image
+                      priority
                       src={`/${textLogo}`}
                       alt=""
                       width={0}
