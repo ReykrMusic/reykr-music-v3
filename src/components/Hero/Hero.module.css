@@ -1,0 +1,19 @@
+.Hero__Box {
+  @apply mx-auto max-w-md;
+}
+
+.Hero__BoxInner {
+  @apply p-6 sm:px-12 sm:pb-12 sm:pt-6 bg-white opacity-80;
+}
+
+.Hero__Nav {
+  @apply mx-auto max-w-sm flex justify-center gap-20 text-2xl mt-6;
+}
+
+.Hero__NavButton {
+  @apply hover:scale-110 focus:scale-110 transition-all ease-in-out duration-300;
+}
+
+.Hero__Social {
+  @apply text-white mx-auto max-w-max flex gap-6 sm:gap-8 mt-6 text-4xl relative;
+}

@@ -7,11 +7,11 @@ const roboto_mono = Roboto_Mono({ subsets: ['latin'] })
 const ErrorPage = () => {
   return (
     <Layout pageTitle="404">
-      <div className="text-white max-w-max text-center mx-auto mt-44 relative">
+      <div className="ErrorPage">
         <h1 className={`text-7xl ${roboto_mono.className}`}>404</h1>
         <p className="my-8 text-2xl">Sorry, that page doesn&apos;t exist!</p>
         <div>
-          <Link href="/" className="BackButton">
+          <Link href="/" className="BackButton Button__Underline">
             <FaArrowLeft className="BackButton__arrow" /> Go back
           </Link>
         </div>

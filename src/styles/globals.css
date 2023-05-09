@@ -7,7 +7,7 @@ html, body {
 }
 
 main {
-  @apply min-h-[60vh];
+  @apply min-h-[60vh] px-4;
 }
 
 .Glass {
@@ -18,12 +18,16 @@ main {
   -webkit-backdrop-filter: blur(5.1px);
 }
 
-.SpotifyGrid {
-  @apply max-w-max xl:max-w-[1000px] mx-auto gap-x-7 xl:gap-x-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 relative;
+.Button {
+  @apply hover:contrast-50 focus:contrast-50 transition;
+}
+
+.Button__Underline {
+  @apply underline underline-offset-4 hover:underline-offset-2 focus:underline-offset-2 ease-in-out transition-all duration-300;
 }
 
 .BackButton {
-  @apply flex items-center mx-auto max-w-max text-xl underline underline-offset-4 hover:underline-offset-2 focus:underline-offset-2 ease-in-out transition-all duration-300 relative;
+  @apply flex items-center mx-auto max-w-max text-xl relative;
 }
 
 .BackButton__arrow {
@@ -35,26 +39,6 @@ main {
   @apply -left-7;
 }
 
-.EnterButton {
-  @apply relative border border-white p-6;
-}
-
-.EnterButton::before,
-.EnterButton::after {
-  @apply transition-all duration-500 content-[''] absolute w-6 h-6;
-}
-
-.EnterButton::before {
-  @apply -top-[5px] -left-[5px] border border-t-white border-l-white border-b-transparent border-r-transparent;
-}
-
-.EnterButton::after {
-  @apply -bottom-[5px] -right-[5px] border border-b-white border-r-white border-t-transparent border-l-transparent;
-}
-
-.EnterButton:hover::before,
-.EnterButton:focus::before,
-.EnterButton:hover::after,
-.EnterButton:focus::after {
-  @apply w-[calc(100%+9px)] h-[calc(100%+9px)];
+.ErrorPage {
+  @apply text-white max-w-max text-center mx-auto mt-44 relative;
 }
