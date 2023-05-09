@@ -7,7 +7,7 @@ const Footer = () => {
           href="https://lucassilbernagel.com/"
           target="_blank"
           rel="noreferrer"
-          className="underline underline-offset-4 hover:underline-offset-2 focus:underline-offset-2 ease-in-out transition-all duration-300"
+          className="Button__Underline"
         >
           Lucas Silbernagel
         </a>

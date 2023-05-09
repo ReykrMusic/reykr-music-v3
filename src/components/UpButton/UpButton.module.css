@@ -1,0 +1,3 @@
+.UpButton {
+  @apply text-white text-4xl fixed bottom-12 right-12 duration-300 hidden xl:flex;
+}

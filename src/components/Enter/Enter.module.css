@@ -1,0 +1,27 @@
+.Enter {
+  @apply max-w-min mx-auto mt-44;
+}
+
+.EnterButton {
+  @apply relative border border-white p-6 text-white text-5xl;
+}
+
+.EnterButton::before,
+.EnterButton::after {
+  @apply transition-all duration-500 content-[''] absolute w-6 h-6;
+}
+
+.EnterButton::before {
+  @apply -top-[5px] -left-[5px] border border-t-white border-l-white border-b-transparent border-r-transparent;
+}
+
+.EnterButton::after {
+  @apply -bottom-[5px] -right-[5px] border border-b-white border-r-white border-t-transparent border-l-transparent;
+}
+
+.EnterButton:hover::before,
+.EnterButton:focus::before,
+.EnterButton:hover::after,
+.EnterButton:focus::after {
+  @apply w-[calc(100%+9px)] h-[calc(100%+9px)];
+}

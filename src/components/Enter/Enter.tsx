@@ -1,6 +1,7 @@
 import Layout from '../Layout'
 import { Roboto_Mono } from 'next/font/google'
 const roboto_mono = Roboto_Mono({ subsets: ['latin'] })
+import styles from './Enter.module.css'
 
 interface IEnterProps {
   enterSite: () => void
@@ -10,11 +11,11 @@ const Enter = (props: IEnterProps) => {
   const { enterSite } = props
   return (
     <Layout hideFooter={true}>
-      <div className="max-w-min mx-auto mt-44">
+      <div className={styles.Enter}>
         <button
           aria-label="Enter the website reykrmusic.com"
           onClick={enterSite}
-          className={`text-white text-5xl ${roboto_mono.className} EnterButton`}
+          className={`${roboto_mono.className} ${styles.EnterButton}`}
         >
           enter
         </button>

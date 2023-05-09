@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import content from '../../../public/content'
+import styles from './About.module.css'
 
 const About = () => {
   const { profilePhoto, bio } = content
@@ -10,14 +11,11 @@ const About = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: '-150px' }}
       transition={{ duration: 1.8 }}
-      className="Glass mx-auto my-[100vh]"
+      className={`Glass ${styles.AboutContainer}`}
     >
-      <div
-        id="about"
-        className="text-black bg-white opacity-80 flex flex-col md:flex-row items-center gap-2 md:w-[700px] scroll-mt-12"
-      >
+      <div id="about" className={styles.About}>
         <h2 className="sr-only">About</h2>
-        <div className="min-w-[260px] md:min-w-[300px]">
+        <div className={styles.About__Photo}>
           <Image
             src={`/${profilePhoto}`}
             alt="Reykr"

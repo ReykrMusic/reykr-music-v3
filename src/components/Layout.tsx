@@ -26,7 +26,7 @@ const Layout = (props: ILayoutProps) => {
         pageDescription={pageDescription}
         pageImage={pageImage}
       />
-      <main className="px-4">{children}</main>
+      <main>{children}</main>
       {!hideFooter && <Footer />}
     </div>
   )

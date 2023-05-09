@@ -1,0 +1,7 @@
+.Music {
+  @apply text-white mb-44 scroll-mt-12;
+}
+
+.SpotifyGrid {
+  @apply max-w-max xl:max-w-[1000px] mx-auto gap-x-7 xl:gap-x-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 relative;
+}

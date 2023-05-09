@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { FaArrowUp } from 'react-icons/fa'
+import styles from './UpButton.module.css'
 
 const UpButton = () => {
   const [currentScrollPos, setCurrentScrollPos] = useState<number>(0)
@@ -15,12 +16,12 @@ const UpButton = () => {
 
   return (
     <div
-      className={`text-white text-4xl fixed bottom-12 right-12 duration-300 hidden xl:flex ${
+      className={`${styles.UpButton} ${
         currentScrollPos > 200 ? 'visible opacity-100' : 'invisible opacity-0'
       }`}
     >
       <button
-        className="hover:contrast-50 focus:contrast-50 transition"
+        className="Button"
         aria-label="scroll to the top of the page"
         onClick={() =>
           window.scroll({

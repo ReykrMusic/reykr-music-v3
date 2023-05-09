@@ -1,0 +1,11 @@
+.AboutContainer {
+  @apply mx-auto my-[100vh];
+}
+
+.About {
+  @apply text-black bg-white opacity-80 flex flex-col md:flex-row items-center gap-2 md:w-[700px] scroll-mt-12;
+}
+
+.About__Photo {
+  @apply min-w-[260px] md:min-w-[300px];
+}

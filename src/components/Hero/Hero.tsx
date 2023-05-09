@@ -9,6 +9,7 @@ import {
   FaSoundcloud,
   FaSpotify,
 } from 'react-icons/fa'
+import styles from './Hero.module.css'
 
 const Hero = () => {
   const { topLogo, textLogo } = content
@@ -29,29 +30,27 @@ const Hero = () => {
           style={{ width: '100%', height: 'auto' }}
         />
       </div>
-      <div className="Glass mx-auto max-w-xl">
-        <div className="p-6 sm:px-12 sm:pb-12 sm:pt-6 bg-white opacity-80">
+      <div className={`Glass ${styles.Hero__Box}`}>
+        <div className={styles.Hero__BoxInner}>
           <h1 className="sr-only">Reykr</h1>
-          <div className="">
-            <Image
-              priority
-              src={`/${textLogo}`}
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: '100%', height: 'auto' }}
-            />
-          </div>
-          <nav className="mx-auto max-w-sm flex justify-center gap-20 text-2xl mt-6">
+          <Image
+            priority
+            src={`/${textLogo}`}
+            alt=""
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <nav className={styles.Hero__Nav}>
             <button
-              className="hover:scale-110 focus:scale-110 transition-all ease-in-out duration-300"
+              className={styles.Hero__NavButton}
               onClick={() => scrollToElement('about')}
             >
               About
             </button>
             <button
-              className="hover:scale-110 focus:scale-110 transition-all ease-in-out duration-300"
+              className={styles.Hero__NavButton}
               onClick={() => scrollToElement('music')}
             >
               Music
@@ -59,14 +58,14 @@ const Hero = () => {
           </nav>
         </div>
       </div>
-      <ul className="text-white mx-auto max-w-max flex gap-6 sm:gap-8 mt-6 text-4xl relative">
+      <ul className={styles.Hero__Social}>
         <li>
           <a
             href="https://www.instagram.com/reykr.official/"
             aria-label="Instagram"
             target="_blank"
             rel="noreferrer"
-            className="hover:contrast-50 focus:contrast-50 transition"
+            className="Button"
           >
             <FaInstagram />
           </a>
@@ -77,7 +76,7 @@ const Hero = () => {
             aria-label="Facebook"
             target="_blank"
             rel="noreferrer"
-            className="hover:contrast-50 focus:contrast-50 transition"
+            className="Button"
           >
             <FaFacebook />
           </a>
@@ -88,7 +87,7 @@ const Hero = () => {
             aria-label="Spotify"
             target="_blank"
             rel="noreferrer"
-            className="hover:contrast-50 focus:contrast-50 transition"
+            className="Button"
           >
             <FaSpotify />
           </a>
@@ -99,7 +98,7 @@ const Hero = () => {
             aria-label="SoundCloud"
             target="_blank"
             rel="noreferrer"
-            className="hover:contrast-50 focus:contrast-50 transition"
+            className="Button"
           >
             <FaSoundcloud />
           </a>
@@ -110,7 +109,7 @@ const Hero = () => {
             aria-label="Bandcamp"
             target="_blank"
             rel="noreferrer"
-            className="hover:contrast-50 focus:contrast-50 transition"
+            className="Button"
           >
             <FaBandcamp />
           </a>
