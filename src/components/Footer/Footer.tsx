@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="pb-4 relative">
+    <footer className="pb-4 relative" data-testid="footer">
       <p className="text-center text-white">
         Built by{' '}
         <a
