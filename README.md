@@ -2,23 +2,13 @@
 
 Website for Reykr, an electronic music producer and DJ.
 
+<img width="1436" alt="Screenshot 2023-05-09 at 9 29 42 PM" src="https://github.com/ReykrMusic/reykr-music-v3/assets/57023164/24dd810a-7f46-4c59-a86e-e907ac1aa5c8">
+
 ## Live Link
 
 [https://reykrmusic.com](https://reykrmusic.com)
 
 ## Tech Stack
-
-### Database
-
-- [MongoDB](https://www.mongodb.com/)
-
-### Server
-
-- [Node](https://nodejs.org/en/)
-- [Express](https://expressjs.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [body-parser](https://www.npmjs.com/package/body-parser)
-- [dotenv](https://www.npmjs.com/package/dotenv)
 
 ### Front End
 
@@ -47,7 +37,7 @@ Once you have confirmed that node is installed, `cd` into a folder on your compu
 
 `git clone https://github.com/ReykrMusic/reykr-music-v3.git`
 
-Then `cd` into the root folder and open it in your code editor. For Visual Studio Code:
+Then `cd` into the project folder and open it in your code editor. For Visual Studio Code:
 
 `cd reykr-music-v3`
 `code .`
@@ -70,3 +60,5 @@ Use `npm run test:unit` to run all unit tests, or use `npm test SomeFileToRun` t
 
 ## Content Management
 
+- Images are stored in the [public](https://github.com/ReykrMusic/reykr-music-v3/tree/main/public) folder.
+- Text and other content can be updated in [content.ts](https://github.com/ReykrMusic/reykr-music-v3/blob/main/public/content.ts), which is also in the `public` folder.
