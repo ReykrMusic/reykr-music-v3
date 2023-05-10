@@ -1,38 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ReykrMusic.com
 
-## Getting Started
+Website for Reykr, an electronic music producer and DJ.
 
-First, run the development server:
+## Live Link
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+[https://reykrmusic.com](https://reykrmusic.com)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Database
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [MongoDB](https://www.mongodb.com/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Server
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [body-parser](https://www.npmjs.com/package/body-parser)
+- [dotenv](https://www.npmjs.com/package/dotenv)
 
-## Learn More
+### Front End
 
-To learn more about Next.js, take a look at the following resources:
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [framer-motion](https://www.npmjs.com/package/framer-motion)
+- [react-icons](https://www.npmjs.com/package/react-icons)
+- [react-spotify-embed](https://www.npmjs.com/package/react-spotify-embed)
+- [lucas-silbernagel-smoke-effect-react](https://www.npmjs.com/package/lucas-silbernagel-smoke-effect-react)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Linting & Formatting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [eslint-config-lucas-silbernagel](https://www.npmjs.com/package/eslint-config-lucas-silbernagel)
 
-## Deploy on Vercel
+## Run Locally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+In order to run this application locally, you must have node installed on your computer. To check if you already have it installed, enter `node -v` in your terminal. If you do not have node, you can install it here: https://nodejs.org/en/
+
+### Clone the repository
+
+Once you have confirmed that node is installed, `cd` into a folder on your computer and run the following command to clone the repository:
+
+`git clone https://github.com/ReykrMusic/reykr-music-v3.git`
+
+Then `cd` into the root folder and open it in your code editor. For Visual Studio Code:
+
+`cd reykr-music-v3`
+`code .`
+
+### Install dependencies
+
+To install all of the required dependencies, run `npm install`.
+
+### Start up the app
+
+To start up the app locally, run `npm run dev` in your terminal. Your terminal should indicate a `localhost` URL at which you can view the app in your browser.
+
+## Testing
+
+### Unit Tests
+
+Unit tests are written with [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/).
+
+Use `npm run test:unit` to run all unit tests, or use `npm test SomeFileToRun` to run a specific test file.
+
+## Content Management
+
