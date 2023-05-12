@@ -1,7 +1,6 @@
 export default {
   // SEO items appear on the preview card when sharing the website on social media.
   seo: {
-    pageTitle: `Home`, // Recommended around 60 characters, but not super important.
     pageDescription: `Reykr: BC-based electronic music producer & DJ blending electronic, hip-hop & psychedelic influences into captivating tracks.`, // Recommended between 150 and 160 characters.
     pageImage: `seoImage.png`, // Must refer to an image in the public folder.
   },
