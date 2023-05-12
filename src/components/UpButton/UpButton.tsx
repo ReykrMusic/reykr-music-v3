@@ -21,6 +21,7 @@ const UpButton = () => {
       }`}
     >
       <button
+        data-testid="up-button"
         className="Button"
         aria-label="scroll to the top of the page"
         onClick={() =>

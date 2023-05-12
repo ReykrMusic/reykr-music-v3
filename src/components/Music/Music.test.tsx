@@ -4,14 +4,18 @@ import Music from './Music'
 import '../../../_mocks_/intersectionObserverMock'
 import content from '../../../public/content'
 
+jest.mock('react-spotify-embed', () => ({
+  Spotify: jest.fn().mockReturnValue(<div>Mocked Spotify component</div>),
+}))
+
 describe('Music', () => {
-  const { bio } = content
+  const { spotifySongs } = content
   test('renders correctly', async () => {
     render(<Music />)
-    // expect(screen.getByTestId('about-section')).toBeInTheDocument()
-    // expect(screen.getByText('Music')).toBeInTheDocument()
-    // expect(screen.getByAltText('Reykr')).toBeInTheDocument()
-    // expect(screen.getByText(bio)).toBeInTheDocument()
-    console.log(screen.debug())
+    expect(screen.getByText('Music')).toBeInTheDocument()
+    const spotifyElements = await screen.findAllByText(
+      'Mocked Spotify component'
+    )
+    expect(spotifyElements).toHaveLength(spotifySongs.length)
   })
 })
