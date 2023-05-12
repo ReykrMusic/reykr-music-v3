@@ -13,6 +13,7 @@ const Enter = (props: IEnterProps) => {
     <Layout hideFooter={true}>
       <div className={styles.Enter}>
         <button
+          data-testid="enter-button"
           aria-label="Enter the website reykrmusic.com"
           onClick={enterSite}
           className={`${roboto_mono.className} ${styles.EnterButton}`}

@@ -13,7 +13,7 @@ const About = () => {
       transition={{ duration: 1.8 }}
       className={`Glass ${styles.AboutContainer}`}
     >
-      <div id="about" className={styles.About}>
+      <div id="about" className={styles.About} data-testid="about-section">
         <h2 className="sr-only">About</h2>
         <div className={styles.About__Photo}>
           <Image

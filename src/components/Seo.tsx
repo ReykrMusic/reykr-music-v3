@@ -10,7 +10,7 @@ interface ISeoProps {
 const Seo = (props: ISeoProps) => {
   const { seo } = content
   const {
-    pageTitle = seo.pageTitle,
+    pageTitle = 'Home',
     pageDescription = seo.pageDescription,
     pageImage = `/${seo.pageImage}`,
   } = props

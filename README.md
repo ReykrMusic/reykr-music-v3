@@ -56,7 +56,7 @@ To start up the app locally, run `npm run dev` in your terminal. Your terminal s
 
 Unit tests are written with [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/).
 
-Use `npm run test:unit` to run all unit tests, or use `npm test SomeFileToRun` to run a specific test file.
+Use `npm test` to run all unit tests, or use `npm test SomeFileToRun` to run a specific test file.
 
 ## Content Management
 

@@ -19,7 +19,7 @@ const Hero = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.8 }}
     >
-      <div className="w-32 mx-auto mt-20">
+      <div className="w-32 mx-auto mt-20" data-testid="hero-section">
         <Image
           priority
           src={`/${topLogo}`}
@@ -66,6 +66,7 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
             className="Button"
+            data-testid="instagram-link"
           >
             <FaInstagram />
           </a>
@@ -77,6 +78,7 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
             className="Button"
+            data-testid="facebook-link"
           >
             <FaFacebook />
           </a>
@@ -88,6 +90,7 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
             className="Button"
+            data-testid="spotify-link"
           >
             <FaSpotify />
           </a>
@@ -99,6 +102,7 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
             className="Button"
+            data-testid="soundcloud-link"
           >
             <FaSoundcloud />
           </a>
@@ -110,6 +114,7 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
             className="Button"
+            data-testid="bandcamp-link"
           >
             <FaBandcamp />
           </a>
