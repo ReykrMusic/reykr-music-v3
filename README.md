@@ -6,7 +6,7 @@ Website for Reykr, an electronic music producer and DJ.
 
 ## Live Link
 
-[https://reykrmusic.com](https://reykrmusic.com)
+[https://www.reykrmusic.com/](https://www.reykrmusic.com/)
 
 ## Tech Stack
 

@@ -26,7 +26,7 @@ const Seo = (props: ISeoProps) => {
       <meta name="image" content={pageImage} />
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://reykrmusic.com" />
+      <meta property="og:url" content="https://www.reykrmusic.com/" />
       <meta property="og:title" content={getPageTitle()} />
       <meta property="og:description" content={pageDescription} />
       <meta property="og:image" content={pageImage} />
@@ -35,7 +35,7 @@ const Seo = (props: ISeoProps) => {
       <meta property="og:site_name" content="REYKR" />
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://reykrmusic.com" />
+      <meta property="twitter:url" content="https://www.reykrmusic.com/" />
       <meta property="twitter:title" content={getPageTitle()} />
       <meta property="twitter:description" content={pageDescription} />
       <meta property="twitter:image" content={pageImage} />
