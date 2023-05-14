@@ -17,7 +17,7 @@ const Hero = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.8 }}
+      transition={{ duration: 4 }}
     >
       <div className="w-32 mx-auto mt-20" data-testid="hero-section">
         <Image
