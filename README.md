@@ -2,7 +2,7 @@
 
 Website for Reykr, an electronic music producer and DJ.
 
-<img width="1436" alt="Screenshot 2023-05-09 at 9 29 42 PM" src="https://github.com/ReykrMusic/reykr-music-v3/assets/57023164/24dd810a-7f46-4c59-a86e-e907ac1aa5c8">
+<img width="1439" alt="seoImage" src="https://github.com/ReykrMusic/reykr-music-v3/assets/57023164/eb641b0a-7b5f-4e1a-9eb8-bac430c6d3d7">
 
 ## Live Link
 
