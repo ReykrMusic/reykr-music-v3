@@ -60,5 +60,7 @@ Use `npm test` to run all unit tests, or use `npm test SomeFileToRun` to run a s
 
 ## Content Management
 
+Content updates can be made directly in GitHub, no need to run the project locally.
+
 - Images are stored in the [public](https://github.com/ReykrMusic/reykr-music-v3/tree/main/public) folder.
 - Text and other content can be updated in [content.ts](https://github.com/ReykrMusic/reykr-music-v3/blob/main/public/content.ts), which is also in the `public` folder.
